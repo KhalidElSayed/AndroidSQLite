@@ -33,3 +33,21 @@ Take a look at the following usefull methods that you can try:
 			
 			public <T> List<T> subQuery(T entityToReturn, Object fromEntity, Object whereEntity,  boolean withAllItsListFields)
 
+
+For Example:
+
+	DatabaseContext dc = new DatabaseContext(this, "data.db"); // Database must be created seperately and put into the assets folder.
+			dc.open();
+			
+			dc.add(entity);
+			dc.addAll(entities);
+			dc.delete(entity);
+			dc.find(entity, true);
+			dc.update(entity, true);
+			dc.updateAll(entities, true);
+			dc.getAll(new Employee(), true);
+			dc.findAll(new Employee(), contentValues, true);	
+			dc.subQuery(new Meeting(), new MeetingAttendee(), attendee, true);
+			
+			dc.close();
+					
