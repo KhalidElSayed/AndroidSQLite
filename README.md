@@ -9,6 +9,12 @@ get operation of Android SQLite database.
 
 Take a look at the following usefull methods that you can try:
 
+			public DatabaseContext(Context context, String DB_NAME)
+			
+			public void open()
+			
+			public void close()
+			
 			public <T> T add(T entity )
 			
 			public <T> List<T> addAll (List<T> entities)
