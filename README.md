@@ -39,12 +39,12 @@ For Example:
 	DatabaseContext dc = new DatabaseContext(this, "data.db"); // Database must be created seperately and put into the assets folder.
 			dc.open();
 			
-			dc.add(entity);
-			dc.addAll(entities);
-			dc.delete(entity);
-			dc.find(entity, true);
-			dc.update(entity, true);
-			dc.updateAll(entities, true);
+			dc.add(employee);
+			dc.addAll(employees);
+			dc.delete(employee);
+			dc.find(employee, true);
+			dc.update(employee, true);
+			dc.updateAll(employees, true);
 			dc.getAll(new Employee(), true);
 			dc.findAll(new Employee(), contentValues, true);	
 			dc.subQuery(new Meeting(), new MeetingAttendee(), attendee, true);
