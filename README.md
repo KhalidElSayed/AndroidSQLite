@@ -34,7 +34,7 @@ Take a look at the following usefull methods that you can try:
 			public <T> List<T> subQuery(T entityToReturn, Object fromEntity, Object whereEntity,  boolean withAllItsListFields)
 
 
-For Example:
+Example:
 
 	DatabaseContext dc = new DatabaseContext(this, "data.db"); // Database must be created seperately and put into the assets folder.
 			dc.open();
@@ -50,4 +50,12 @@ For Example:
 			dc.subQuery(new Meeting(), new MeetingAttendee(), attendee, true);
 			
 			dc.close();
-					
+			
+Supported variable types to store in the database:
+
+	int
+	float
+	long  
+	String
+
+	If you want to store Date variable, store it as String or long(milliseconds)				
